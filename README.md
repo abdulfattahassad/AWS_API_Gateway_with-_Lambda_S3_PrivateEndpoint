@@ -67,7 +67,7 @@ Then Create Resource
     ]
 }
 
--------------
+
 Create Method : we will use get , to get the file from S3 Bucket 
 Lambda Function which was created in previous step , will be assoicate with API GW
 
@@ -89,6 +89,7 @@ Lambda Function which was created in previous step , will be assoicate with API 
 -  EC2 require IAM role to access API Gateway , Create Custom Permission and Custom IAM Role then assoicated with EC2  - The main point is  * execute-api:Invoke *  
 
 ```json
+
 {
     "Version": "2012-10-17",
     "Statement": [
