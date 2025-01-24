@@ -1,6 +1,6 @@
 
 
-![Alt Text](pic/aws-apigateway-lambda-s3.gif)
+![Alt Text](Pic/aws-apigateway-lambda-s3.gif)
 
 ## ** Project Goal ** ## 
 
