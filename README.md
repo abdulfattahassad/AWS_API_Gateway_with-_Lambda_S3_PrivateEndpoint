@@ -68,7 +68,7 @@ Then Create Resource
     ]
 }
 
-'''
+''' '''
 
 -Create Method : we will use get , to get the file from S3 Bucket 
 Lambda Function which was created in previous step , will be assoicate with API GW
@@ -104,7 +104,7 @@ Lambda Function which was created in previous step , will be assoicate with API 
     ]
 }
 
-'''
+'''''
 ##** TEST From EC2  ** ##  
 
 - use simple-request.py and Replace API GW URL 
