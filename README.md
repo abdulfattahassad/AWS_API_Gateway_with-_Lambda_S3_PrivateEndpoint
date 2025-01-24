@@ -52,6 +52,7 @@ Then Create Resource
 ![Alt text](Pic/API-GW-Resource-Creation.png)
 
 - Create Resource Policy for API Gateway to restrict the access to it 
+
 ```json
 
 {
@@ -66,8 +67,9 @@ Then Create Resource
     ]
 }
 
-- Create Method : we will use get , to get the file from S3 Bucket 
-  Lambda Function which was created in previous step , will be assoicate with API GW
+-------------
+Create Method : we will use get , to get the file from S3 Bucket 
+Lambda Function which was created in previous step , will be assoicate with API GW
 
 ![Alt text](Pic/API-GW-Method.png)
 
@@ -85,6 +87,7 @@ Then Create Resource
 
 ### ** 4th STEP : IAM Role Configuration ** ###
 -  EC2 require IAM role to access API Gateway , Create Custom Permission and Custom IAM Role then assoicated with EC2  - The main point is  * execute-api:Invoke *  
+
 ```json
 {
     "Version": "2012-10-17",
