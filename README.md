@@ -52,7 +52,7 @@ Then Create Resource
 ![Alt text](Pic/API-GW-Resource-Creation.png)
 
 - Create Resource Policy for API Gateway to restrict the access to it 
-
+```json
 
 {
     "Version": "2012-10-17",
@@ -85,7 +85,7 @@ Then Create Resource
 
 ### ** 4th STEP : IAM Role Configuration ** ###
 -  EC2 require IAM role to access API Gateway , Create Custom Permission and Custom IAM Role then assoicated with EC2  - The main point is  * execute-api:Invoke *  
-
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
