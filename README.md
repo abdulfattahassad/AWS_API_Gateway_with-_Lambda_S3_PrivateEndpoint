@@ -80,7 +80,7 @@ Then Create Resource
 - URL will be created wich will be API URL 
 
 
-![Alt text](Pic/Stage%20URL.png)
+![Alt text](Pic/Stage URL.png)
 
 
 ### ** 4th STEP : IAM Role Configuration ** ###
