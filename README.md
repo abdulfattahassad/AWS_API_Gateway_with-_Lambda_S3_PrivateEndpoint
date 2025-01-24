@@ -79,8 +79,7 @@ Lambda Function which was created in previous step , will be assoicate with API 
   --->Check the file in repo :  IAM-Role-EC2.json
 
 
-##** TEST From EC2  ** ##  
-
+### ** 5th STEP : TEST From EC2   ** ###
 - use simple-request.py and Replace API GW URL 
 OR
 - Curl URL 
