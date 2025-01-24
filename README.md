@@ -53,6 +53,7 @@ Then Create Resource
 
 - Create Resource Policy for API Gateway to restrict the access to it 
 
+```markdown
 ```json
 
 {
@@ -67,6 +68,7 @@ Then Create Resource
     ]
 }
 
+```markdown
 
 Create Method : we will use get , to get the file from S3 Bucket 
 Lambda Function which was created in previous step , will be assoicate with API GW
@@ -86,7 +88,9 @@ Lambda Function which was created in previous step , will be assoicate with API 
 
 
 ### ** 4th STEP : IAM Role Configuration ** ###
--  EC2 require IAM role to access API Gateway , Create Custom Permission and Custom IAM Role then assoicated with EC2  - The main point is  * execute-api:Invoke *  
+-  EC2 require IAM role to access API Gateway , Create Custom Permission and Custom IAM Role then assoicated with EC2  - The main point is  * execute-api:Invoke * 
+
+```markdown
 
 ```json
 
@@ -103,6 +107,7 @@ Lambda Function which was created in previous step , will be assoicate with API 
     ]
 }
 
+```markdown
 ## ** TEST From EC2  ** ##  
 
 - use simple-request.py and Replace API GW URL 
