@@ -52,23 +52,10 @@ Then Create Resource
 ![Alt text](Pic/API-GW-Resource-Creation.png)
 
 - Create Resource Policy for API Gateway to restrict the access to it 
+  
+  Chekc the file in the repo  ---> Resource-Policy-API-GW.json
 
-``` yaml
-
-{
-    "Version": "2012-10-17",
-    "Statement": [
-              {
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "execute-api:Invoke",
-            "Resource": "*"
-        }
-    ]
-}.
-
-'''''''''
-** Create Method *** : we will use get , to get the file from S3 Bucket 
+* Create Method : we will use get , to get the file from S3 Bucket 
 Lambda Function which was created in previous step , will be assoicate with API GW
 
 ![Alt text](Pic/API-GW-Method.png)
@@ -76,34 +63,22 @@ Lambda Function which was created in previous step , will be assoicate with API 
 
 ![Alt text](Pic/API-GW-Lambda-Assoicatation.png) 
 
-Deploy API , Create Stage on the fly 
+- Deploy API , Create Stage on the fly 
 
 ![Alt text](Pic/API-GW-Stage.png)
 
- URL will be created wich will be API URL 
+- URL will be created wich will be API URL 
 
 
-![Alt text](Pic/StageURL.png)
+![Alt text](Pic/Stage-URL.png)
 
 
 ### ** 4th STEP : IAM Role Configuration ** ###
 -  EC2 require IAM role to access API Gateway , Create Custom Permission and Custom IAM Role then assoicated with EC2  - The main point is  * execute-api:Invoke * 
 
-''' yaml 
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "execute-api:Invoke"
-            ],
-            "Resource": "arn:aws:execute-api:us-east-1:992382750911:tr517nrebc/*"
-        }
-    ]
-}
+  --->Check the file in repo :  IAM-Role-EC2.json
 
-''''''''''
+
 ##** TEST From EC2  ** ##  
 
 - use simple-request.py and Replace API GW URL 
