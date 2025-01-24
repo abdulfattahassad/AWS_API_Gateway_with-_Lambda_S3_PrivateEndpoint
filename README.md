@@ -21,35 +21,35 @@ Note: There are some notes called : cider_function , element_function, format  =
 - S3 Bucket has been created manaully by GUI with File jason inside it  - it is easy setup 
 - Lambda Function  [ Lambda-function.py] will be deployed manually 
 
-![Alt text](/pic/Lambda-Function-01.png)
+![Alt text](Pic/Lambda-Function-01.png)
 
 
 ![Alt text](/pic/Lambda-Function-02.png)
 
 - Test now 
-![Alt text](/pic/Lambda_Function_To_S3_Error.png) 
+![Alt text](Pic/Lambda_Function_To_S3_Error.png) 
 
 There is Error because Lambda Function does not have IAM Role , So we need assoicate it 
 
-![Alt text](/pic/Lambda_Function_IAM_ROLE.png) 
+![Alt text](Pic/Lambda_Function_IAM_ROLE.png) 
 
-![Alt text](/pic/Lambda_Function_IAM_ROLE_Assoicate.png) 
+![Alt text](Pic/Lambda_Function_IAM_ROLE_Assoicate.png) 
 
 it wil work now 
 
-![Alt text](/pic/Lambda_Fuction_with_IAM_Role.png)
+![Alt text](Pic/Lambda_Fuction_with_IAM_Role.png)
 
 
 
 ### ** 3rd   STEP  API-GW  ** ###
 - Create API gateway , REST API -> choose Private 
-![Alt text](/pic/API-GW-1.png) 
+![Alt text](Pic/API-GW-1.png) 
 
-![Alt text](/pic/API-GW-Private.png) 
+![Alt text](Pic/API-GW-Private.png) 
 
 Then Create Resource 
 
-![Alt text](/pic/API-GW-Resource-Creation.png)
+![Alt text](Pic/API-GW-Resource-Creation.png)
 
 - Create Resource Policy for API Gateway to restrict the access to it 
 
