@@ -69,15 +69,18 @@ Then Create Resource
 - Create Method : we will use get , to get the file from S3 Bucket 
   Lambda Function which was created in previous step , will be assoicate with API GW
 
-![Alt text](/pic/API-GW-Method.png)
+![Alt text](Pic/API-GW-Method.png)
 
-![Alt text](/pic/API-GW-Lambda-Assoicatation.png) 
+![Alt text](Pic/API-GW-Lambda-Assoicatation.png) 
 
 - Deploy API , Create Stage on the fly 
 
-![Alt text](/pic/API-GW-Stage.png)
+![Alt text](Pic/API-GW-Stage.png)
 
 - URL will be created wich will be API URL 
+
+
+![Alt text](Pic/Stage%20URL.png)
 
 
 ### ** 4th STEP : IAM Role Configuration ** ###
