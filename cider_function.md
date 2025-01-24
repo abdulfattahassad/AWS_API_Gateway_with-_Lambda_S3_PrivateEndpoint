@@ -1,4 +1,4 @@
-# cidr_block = cidrsubnet(var.vpc_cidr, var.in_subnets_max, count.index)
+## cidr_block = cidrsubnet(var.vpc_cidr, var.in_subnets_max, count.index) ##
 is using the cidrsubnet() function in Terraform to dynamically calculate a CIDR block for each subnet based on a given parent network CIDR block (var.vpc_cidr). Let's break it down step by step:
 
 Components of the cidrsubnet() Function:

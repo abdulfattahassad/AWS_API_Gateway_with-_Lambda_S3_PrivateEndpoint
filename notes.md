@@ -8,12 +8,11 @@ If enable_dns_support = true, the VPC will support DNS resolution.
 If enable_dns_support = false, DNS resolution will be disabled for the VPC.
 # when we integrate lambda function with API gateway ,  Resource Policy in lambda function under permission section in lambda will be created automatically 
 
-# Two more actions required :
+#  more actions required :
  1-  create resource policy in api gateway  in order to be used via any sources  conain api-invoke
  2-  create IAM role in lambda function and assoicate with it under exectuion role in order to access S3 bucket
  3- EC2 require IAM role to access API Gateway
- 4- enable private dns  for endpoint interface via going to edit private dns name  which effect on interface endpoint state  ===NOT RELATED .. so we can remove it
-
+ 
  # API in API gateway  has same format for all types ...
  
 # E2 IAM Role to access API GW

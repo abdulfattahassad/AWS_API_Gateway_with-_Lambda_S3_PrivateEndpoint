@@ -1,7 +1,7 @@
 availability_zone = element(data.aws_availability_zones.with.names, count.index)
 is used in Terraform to assign an Availability Zone (AZ) to a subnet dynamically. Here's a detailed breakdown of how it works:
 
-# element() Function:
+## element() Function:  ##
 element() is a Terraform function that returns an item from a list based on the index you provide.
 Syntax: element(list, index)
 list: This is the list from which an item is to be fetched.

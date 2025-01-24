@@ -1,4 +1,4 @@
-# Name = "private_subnet  ${format("%02d", count.index + 1)}"
+## Name = "private_subnet  ${format("%02d", count.index + 1)}" ##
 is used in Terraform to dynamically assign a name to a subnet resource. Let’s break it down step-by-step to understand how it works:
 
 1. Name =
